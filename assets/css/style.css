@@ -1,0 +1,28 @@
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #555;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.navbar {
+    background-color: #e90a0a !important; /* สีแดงเข้ม */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #333; /* กำหนดสีข้อความใน dropdown เป็นสีดำ */
+}

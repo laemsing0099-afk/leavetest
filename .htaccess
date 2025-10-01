@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /leave_management/
+
+    DirectoryIndex index.php
+
+    <FilesMatch "\.(env|log|sql)$">
+        Deny from all
+    </FilesMatch>
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+</IfModule>
+
+ErrorDocument 403 /leave_management/unauthorized.php
+ErrorDocument 404 /leave_management/unauthorized.php
+ErrorDocument 500 /leave_management/unauthorized.php
